@@ -1,2 +1,20 @@
 import { posts } from '/data.js';
-console.log(posts)
+
+function postsHTML(){
+    let postText = ``
+    posts.forEach(post => {
+        postText += `
+            <article class="post">
+            <img class="posts-img" src="${post.image}" alt="">
+            <p class="posts-date">${post.date}</p>
+            <h2 class="posts-heading">${post.heading}</h2>
+            <p class="posts-text">${post.text}</p>
+        </article>
+        `
+    })
+    return postText
+}
+function renderPosts(){
+    document.querySelector('.posts').innerHTML = postsHTML()
+}
+renderPosts()
