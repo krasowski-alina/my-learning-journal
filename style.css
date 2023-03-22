@@ -20,8 +20,11 @@ nav {
     justify-content: space-between;
     position: relative;
 }
-ul {
-    width: 90%;
+/* ul {
+    display: none;
+} */
+ul{
+    width: 100%;
     position: absolute;
     top: 60px;
     margin-top: 0;
@@ -47,6 +50,7 @@ i {
 }
 .logo-text {
     font-weight: 700;
+    letter-spacing: -0.03em;
     font-size: 0.9rem;
     margin-left: 0.4em;
     font-family: 'Roboto', sans-serif;
@@ -112,6 +116,8 @@ button {
 .posts-date,
 .posts-text{
     margin: 0.5em 0em;
+    color: #505050;
+
 }
 .posts-heading {
     margin: 0;
@@ -126,4 +132,28 @@ footer {
 .footer-text {
     margin: 0;
     font-size: 0.75rem;
+}
+@media (min-width: 600px){
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    .main-article {
+        min-height: 488px;
+        padding: 3.125em 3.687em;
+    }
+    .main-article-heading{
+        font-size: 2.5rem;
+    }
+    .main-article-date{
+        font-size: 1rem;
+    }
+    .main-article-text {
+        max-width: 65%;
+        font-size: 1.125rem;
+    }
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 2em 3.125em;
+    }
 }
