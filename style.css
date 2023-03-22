@@ -11,32 +11,48 @@ header
     margin: 0 auto;
 }
 nav,
-.logo,
-ul {
+.logo {
     display: flex;
     align-items: center;
 }
 nav {
     height: 3.75em;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
 }
 ul {
-    list-style: none;
+    width: 90%;
+    position: absolute;
+    top: 60px;
+    margin-top: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.7);
 }
 li {
-    margin-right: 1em;
-    font-size: 0.8125rem;
+    list-style: none;
+}
+.nav-link {
+    font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px black;
 }
 .logo-icon {
     width: 24px;
+    margin-left: 1em;
+}
+i {
+    margin-right: 1em;
 }
 .logo-text {
     font-weight: 700;
     font-size: 0.9rem;
     margin-left: 0.4em;
     font-family: 'Roboto', sans-serif;
+}
+.hidden {
+    display: none;
 }
 /* main section */
 .hero-section {

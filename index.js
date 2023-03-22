@@ -1,5 +1,16 @@
 import { posts } from '/data.js';
+const toggleBtn = document.getElementById('toggle-btn')
+const navList = document.getElementById('nav-list')
+const navLink = document.querySelectorAll('.nav-link')
+console.log(navLink)
 
+
+toggleBtn.addEventListener('click', ()=> {
+    navList.classList.toggle('hidden')
+})
+navLink.forEach(link => {
+    link.addEventListener("click", ()=> navList.classList.remove('hidden'))
+})
 function postsHTML(){
     let postText = ``
     posts.forEach(post => {
