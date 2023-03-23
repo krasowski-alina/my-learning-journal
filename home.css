@@ -136,7 +136,7 @@ footer {
 @media (min-width: 600px){
     nav,
     section{
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
     }
     .logo-text {
