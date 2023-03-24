@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo-icon" src="images/logo.png" alt="logo">
+                <span class="logo-text">My learning journal</span>
+            </div>
+            <ul class="hidden active" id="nav-list">
+                <li><a class="nav-link" href="home.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li> 
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars" id="toggle-btn"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="main-section">
+        <article>
+            <p class="text-date">JULY 23, 2022</p>
+            <h1>My new journey as a bootcamp student.</h1>
+            <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+            <div class="hero-img"></div>
+        </article>
+        <article>
+            <h2>How I stay committed to learning</h2>
+            <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+            <p>While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.</p>
+            <h2>How I got started</h2>  
+            <p>I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.</p>
+            <p>That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.</p>
+        </article>
+        <h3>Recent posts</h3>
+    </section>
+    <section class="posts">
+    </section>
+
+
+
+    <footer>
+        <span class="logo-text footer-text">My learning journal</span>
+        <p class="footer-text">Copyright ©2022</p>
+    </footer>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
