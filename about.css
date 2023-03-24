@@ -146,11 +146,30 @@ footer {
         max-width: 1000px;
         margin: 0 auto;
     }
+    ul .nav-link{
+        font-size: 1.124rem;
+        color: #202020;
+        font-weight: 800;
+        text-shadow: none;
+    }
+    .logo {
+        width: 45%;
+    }
+    .active {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        top: 8%;
+        gap: 3em;
+        margin-right: 3em;
+        background-color: rgb(250,250,250);
+    }
     .logo-text {
         font-size: 1.25rem;
     }
     .toggle-btn {
-        visibility: hidden;
+        display: none;
     }
     /* main section */
     .container{

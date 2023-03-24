@@ -6,6 +6,7 @@ const navLink = document.querySelectorAll('.nav-link')
 
 toggleBtn.addEventListener('click', ()=> {
     navList.classList.toggle('hidden')
+    // add active class for link styles in mobile version
 
 })
 navLink.forEach(link => {
