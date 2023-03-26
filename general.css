@@ -28,17 +28,18 @@ nav {
     width: 100%;
     position: absolute;
     top: 60px;
-    padding: 0;
+    padding: .8em 0;
+    font-size: 2rem;
     margin-top: 0;
     text-align: center;
-    background-color: rgba(255, 255, 255,0.7);
+    background-color: rgba(14, 131, 136, .9);
 }
 .nav-link {
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
     color: #FFFFFF;
-    text-shadow: 0 0 2px black;
+    text-shadow: 0.5px 0.5px 2px #202020;
 }
 .logo-icon {
     width: 24px;
